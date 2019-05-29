@@ -5,6 +5,8 @@ import java.util.Scanner;
 import jogador.Computador;
 import jogador.Jogador;
 
+
+//interacao 1
 public class Main {
 	
 	public static void main(String[] args) {
@@ -17,9 +19,9 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		do {
-			System.out.println("Qual a quantidade de adversários?");
+			System.out.println("Qual a quantidade de adversï¿½rios?");
 			int numeroAdversarios = sc.nextInt();
-			String nomeAdversario = "Adversário ";
+			String nomeAdversario = "Adversï¿½rio ";
 			
 			System.out.println("Qual a quantidade de jogadores?");
 			int numeroJogadores = sc.nextInt();
@@ -32,7 +34,7 @@ public class Main {
 			//System.out.println(numeroAdversarios);
 			for (int i = 0; i < numeroAdversarios; i++) {
 				int numeroDoJogador = i+1;
-				//concatena cada "Adversário" com o número até chegar no que foi digitado. 
+				//concatena cada "Adversï¿½rio" com o nï¿½mero atï¿½ chegar no que foi digitado. 
 				//EX: 2 : Adversario1, Adversario 12
 				//nomeAdversario = nomeAdversario.concat(Integer.toString(i+1));
 				System.out.println(nomeAdversario + " " + numeroDoJogador);
@@ -88,7 +90,7 @@ public class Main {
 		//		System.out.println("DEU EMPATE!");
 		//	}
 				
-		System.out.println("Jogar de novo? 1 - Sim, 2 - Não");
+		System.out.println("Jogar de novo? 1 - Sim, 2 - Nï¿½o");
 		int resposta = sc.nextInt();
 		
 			if (resposta == 2) {
@@ -105,7 +107,7 @@ public class Main {
         
 	    // Imprimir relatorio
 	        System.out.printf("|  %6s  |  %6s  |  %6s  |  %12s  |  %14s  |\n",
-	                "VITÓRIAS", "DERROTAS", "EMPATES", "JOGOS REALIZADOS", "PORCENTAGEM DE VITÓRIAS");
+	                "VITï¿½RIAS", "DERROTAS", "EMPATES", "JOGOS REALIZADOS", "PORCENTAGEM DE VITï¿½RIAS");
 	 
 	         System.out.printf("|  %6d  |  %6d  |  %6d  |  %12d  |  %13.2f%%  |\n",
 	                vitorias, derrotas, empates, jogadas, porcentVitorias * 100);
@@ -117,7 +119,7 @@ public class Main {
 		if (ganhador == null) {
 			System.out.println("Empate!");
 		} else {
-			System.out.println("O ganhador é: " + ganhador.getNome());
+			System.out.println("O ganhador ï¿½: " + ganhador.getNome());
 		}
 	}
 }
